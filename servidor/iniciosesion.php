@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+   
+   
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <link href="../plugins/validetta/validetta.min.css" rel="stylesheet">
+     <link href="../plugins/confirm/jquery-confirm.min.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+     <script src="../plugins/validetta/validetta.min.js"></script>
+     <script src="../plugins/validetta/validettaLang-es-ES.js"></script>
+     <script src="../plugins/confirm/jquery-confirm.min.js"></script>
+     <script src="../js/sesion.js"></script>
+       
+
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <nav class="grey darken-1">
+        <div class="nav-wrapper">
+             <div class="container">
+                 <a href="index.html" class="brand-logo">ESCOMida</a>
+                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                       <li><a href="registro.php">Registrate</a></li>
+                       <li><a href="#">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <br><br>
+    
+  <div class="container">
+  <form id="formInicio" autocomplete="off">
+            <div class="row">
+            <div class="col s12 m12">
+                 <h6>Inicio de sesión para el vendedor: </h6>
+            </div>
+           
+                <div class="col s12 m6 input-field">
+                    <i class="fas fa-user prefix blue-text"></i>
+                    <label for="idvendedor">ID</label>
+                    <input type="text" id="idvendedor" name="idvendedor" maxlength="10" data-validetta="required,number,minLength[1],maxLength[10]">
+                </div>
+                <div class="col s12 m6"></div>
+                <div class="col s12 m6 input-field">
+                    <i class="fas fa-key prefix blue-text"></i>
+                    <label for="contrasena">Contrase&ntilde;a</label>
+                    <input type="password" id="contrasena" name="contrasena" data-validetta="required,minLength[6]">
+                </div>
+        
+                <div class="col s12 input-field">
+                    <input type="submit" class="btn orange" value="Entrar" style="width: 100%;">
+                </div>
+                <div class="col s12 m6">
+                 <a href="inicioSesionCliente.html">Eres Cliente?. Pulsa éste enlace</a>
+                </div>
+            </div>
+            </form>
+</div>
+
+     
+</body>
+</html>

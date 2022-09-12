@@ -1,0 +1,44 @@
+body{
+    
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+
+section .vprofilepic{
+    
+    height:120vh;
+}
+     
+    .vprofilepic1{
+       height:50vh;
+    }
+    .vprofilepic2{
+        height:40vh;
+    }
+
+
+section .vprofileinf{
+    
+    height:120vh;
+}
+
+section .mleft{
+    height:0vh;
+}
+
+section .mright{
+    
+    height:0vh;
+}
+
+@media screen and (min-width:650px){
+    section .mleft{
+        height:120vh;
+    }
+    
+    section .mright{
+        
+        height:120vh;
+    }
+}
